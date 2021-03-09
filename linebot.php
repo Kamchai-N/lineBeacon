@@ -425,7 +425,7 @@ if ( sizeof($request_array['events']) > 0 ) {
         $data = [];
 
         if($text == "product"){
-           return $data = [
+           $data = [
                 'replyToken' => $reply_token,
                 'messages' => [$jsonFlex]
             ];
