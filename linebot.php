@@ -35,268 +35,387 @@ $request_array = json_decode($request, true);   // Decode JSON to Array
 // }
 
 
-
 $jsonFlex = [
-  "type"=> "carousel",
-  "altText" => "Hello Flex Message",
-  "contents"=> [
-      "type"=> "bubble",
-      "size"=> "micro",
-      "hero"=> [
-        "type"=> "image",
-        "size"=> "full",
-        "aspectMode"=> "cover",
-        "aspectRatio"=> "320=>213",
-        "url"=> "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1603332211000"
-      ],
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "contents"=> [
+    "type" => "flex",
+    "altText" => "Hello Flex Message",
+    "contents" => [
+      "type" => "bubble",
+      "direction" => "ltr",
+      "header" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
           [
-            "type"=> "text",
-            "text"=> "Apple MacBook Air ",
-            "weight"=> "bold",
-            "size"=> "sm",
-            "wrap"=> true
+            "type" => "text",
+            "text" => "Purchase",
+            "size" => "lg",
+            "align" => "start",
+            "weight" => "bold",
+            "color" => "#009813"
           ],
           [
-            "type"=> "box",
-            "layout"=> "baseline",
-            "contents"=> [
+            "type" => "text",
+            "text" => "฿ 100.00",
+            "size" => "3xl",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "Rabbit Line Pay",
+            "size" => "lg",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "2019.02.14 21:47 (GMT+0700)",
+            "size" => "xs",
+            "color" => "#B2B2B2"
+          ],
+          [
+            "type" => "text",
+            "text" => "Payment complete.",
+            "margin" => "lg",
+            "size" => "lg",
+            "color" => "#000000"
+          ]
+        ]
+      ],
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
+            "type" => "separator",
+            "color" => "#C3C3C3"
+          ],
+          [
+            "type" => "box",
+            "layout" => "baseline",
+            "margin" => "lg",
+            "contents" => [
               [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                "type" => "text",
+                "text" => "Merchant",
+                "align" => "start",
+                "color" => "#C3C3C3"
               ],
               [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-              ],
-              [
-                "type"=> "text",
-                "text"=> "4.0",
-                "size"=> "xs",
-                "color"=> "#8c8c8c",
-                "margin"=> "md",
-                "flex"=> 0
+                "type" => "text",
+                "text" => "BTS 01",
+                "align" => "end",
+                "color" => "#000000"
               ]
             ]
-            ],
+          ],
           [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
+            "type" => "box",
+            "layout" => "baseline",
+            "margin" => "lg",
+            "contents" => [
               [
-                "type"=> "box",
-                "layout"=> "baseline",
-                "spacing"=> "sm",
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "฿41,400.00",
-                    "wrap"=> true,
-                    "color"=> "#8c8c8c",
-                    "size"=> "xs",
-                    "flex"=> 5
-                  ]
-                ]
+                "type" => "text",
+                "text" => "New balance",
+                "color" => "#C3C3C3"
+              ],
+              [
+                "type" => "text",
+                "text" => "฿ 45.57",
+                "align" => "end"
+              ]
             ]
+          ],
+          [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ]
+        ]
+      ],
+      "footer" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "View Details",
+            "size" => "lg",
+            "align" => "start",
+            "color" => "#0084B6",
+            "action" => [
+              "type" => "uri",
+              "label" => "View Details",
+              "uri" => "https://google.co.th/"
             ]
           ]
-        ],
-        "spacing"=> "sm",
-        "paddingAll"=> "13px"
+        ]
       ]
-    ],
-    [
-      "type"=> "bubble",
-      "size"=> "micro",
-      "hero"=> [
-        "type"=> "image",
-        "url"=> "https://cf.shopee.co.th/file/2b21f1c39aba591992ddd44e85d395a0",
-        "size"=> "full",
-        "aspectMode"=> "cover",
-        "aspectRatio"=> "320:213"
-      ],
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "contents"=> [
-          [
-            "type"=> "text",
-            "text"=> "Microsoft Surface GO 2",
-            "weight"=> "bold",
-            "size"=> "sm",
-            "wrap"=> true
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "baseline",
-            "contents"=> [
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-              ],
-              [
-                "type"=> "text",
-                "text"=> "4.0",
-                "size"=> "sm",
-                "color"=> "#8c8c8c",
-                "margin"=> "md",
-                "flex"=> 0
-              ]
-            ]
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
-              [
-                "type"=> "box",
-                "layout"=> "baseline",
-                "spacing"=> "sm",
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "฿24,990",
-                    "wrap"=> true,
-                    "color"=> "#8c8c8c",
-                    "size"=> "xs",
-                    "flex"=> 5
-                  ]
-                ]
-              ]
-            ]
-          ]
-        ],
-        "spacing"=> "sm",
-        "paddingAll"=> "13px"
-      ]
-    ],
-    [
-      "type"=> "bubble",
-      "size"=> "micro",
-      "hero"=> [
-        "type"=> "image",
-        "url"=> "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x13-gallery-1.jpg?context=bWFzdGVyfHJvb3R8MzE5Njc5fGltYWdlL2pwZWd8aDhiL2gzMC8xMDgwOTUzNzY5MTY3OC5qcGd8OWMxZDY0Mjk5N2M3NWVjYzFlNjlkYmNkYTU0NjQ1OTQ4ZjJiNmViZWE1ZTJjMGU4YTMyZDE0MzMxYjE4ZTZlYw",
-        "size"=> "full",
-        "aspectMode"=> "cover",
-        "aspectRatio"=> "320:213"
-      ],
-      "body"=> [
-        "type"=> "box",
-        "layout"=> "vertical",
-        "contents"=> [
-          [
-            "type"=> "text",
-            "text"=> "ThinkPad X13",
-            "weight"=> "bold",
-            "size"=> "sm"
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "baseline",
-            "contents"=> [
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              ],
-              [
-                "type"=> "icon",
-                "size"=> "xs",
-                "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-              ],
-              [
-                "type"=> "text",
-                "text"=> "4.0",
-                "size"=> "sm",
-                "color"=> "#8c8c8c",
-                "margin"=> "md",
-                "flex"=> 0
-              ]
-            ]
-          ],
-          [
-            "type"=> "box",
-            "layout"=> "vertical",
-            "contents"=> [
-              [
-                "type"=> "box",
-                "layout"=> "baseline",
-                "spacing"=> "sm",
-                "contents"=> [
-                  [
-                    "type"=> "text",
-                    "text"=> "฿36,777",
-                    "wrap"=> true,
-                    "color"=> "#8c8c8c",
-                    "size"=> "xs",
-                    "flex"=> 5
-                  ]
-                ]
-              ]
-            ]
-          ]
-        ],
-        "spacing"=> "sm",
-        "paddingAll"=> "13px"
-      ]
-  ]
+    ]
   ];
+  
+
+// $jsonFlex = [
+//   "type"=> "carousel",
+//   "altText" => "Hello Flex Message",
+//   "contents"=> [
+//       "type"=> "bubble",
+//       "size"=> "micro",
+//       "hero"=> [
+//         "type"=> "image",
+//         "size"=> "full",
+//         "aspectMode"=> "cover",
+//         "aspectRatio"=> "320=>213",
+//         "url"=> "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1603332211000"
+//       ],
+//       "body"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "contents"=> [
+//           [
+//             "type"=> "text",
+//             "text"=> "Apple MacBook Air ",
+//             "weight"=> "bold",
+//             "size"=> "sm",
+//             "wrap"=> true
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "baseline",
+//             "contents"=> [
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+//               ],
+//               [
+//                 "type"=> "text",
+//                 "text"=> "4.0",
+//                 "size"=> "xs",
+//                 "color"=> "#8c8c8c",
+//                 "margin"=> "md",
+//                 "flex"=> 0
+//               ]
+//             ]
+//             ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "vertical",
+//             "contents"=> [
+//               [
+//                 "type"=> "box",
+//                 "layout"=> "baseline",
+//                 "spacing"=> "sm",
+//                 "contents"=> [
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "฿41,400.00",
+//                     "wrap"=> true,
+//                     "color"=> "#8c8c8c",
+//                     "size"=> "xs",
+//                     "flex"=> 5
+//                   ]
+//                 ]
+//             ]
+//             ]
+//           ]
+//         ],
+//         "spacing"=> "sm",
+//         "paddingAll"=> "13px"
+//       ]
+//     ],
+//     [
+//       "type"=> "bubble",
+//       "size"=> "micro",
+//       "hero"=> [
+//         "type"=> "image",
+//         "url"=> "https://cf.shopee.co.th/file/2b21f1c39aba591992ddd44e85d395a0",
+//         "size"=> "full",
+//         "aspectMode"=> "cover",
+//         "aspectRatio"=> "320:213"
+//       ],
+//       "body"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "contents"=> [
+//           [
+//             "type"=> "text",
+//             "text"=> "Microsoft Surface GO 2",
+//             "weight"=> "bold",
+//             "size"=> "sm",
+//             "wrap"=> true
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "baseline",
+//             "contents"=> [
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+//               ],
+//               [
+//                 "type"=> "text",
+//                 "text"=> "4.0",
+//                 "size"=> "sm",
+//                 "color"=> "#8c8c8c",
+//                 "margin"=> "md",
+//                 "flex"=> 0
+//               ]
+//             ]
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "vertical",
+//             "contents"=> [
+//               [
+//                 "type"=> "box",
+//                 "layout"=> "baseline",
+//                 "spacing"=> "sm",
+//                 "contents"=> [
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "฿24,990",
+//                     "wrap"=> true,
+//                     "color"=> "#8c8c8c",
+//                     "size"=> "xs",
+//                     "flex"=> 5
+//                   ]
+//                 ]
+//               ]
+//             ]
+//           ]
+//         ],
+//         "spacing"=> "sm",
+//         "paddingAll"=> "13px"
+//       ]
+//     ],
+//     [
+//       "type"=> "bubble",
+//       "size"=> "micro",
+//       "hero"=> [
+//         "type"=> "image",
+//         "url"=> "https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x13-gallery-1.jpg?context=bWFzdGVyfHJvb3R8MzE5Njc5fGltYWdlL2pwZWd8aDhiL2gzMC8xMDgwOTUzNzY5MTY3OC5qcGd8OWMxZDY0Mjk5N2M3NWVjYzFlNjlkYmNkYTU0NjQ1OTQ4ZjJiNmViZWE1ZTJjMGU4YTMyZDE0MzMxYjE4ZTZlYw",
+//         "size"=> "full",
+//         "aspectMode"=> "cover",
+//         "aspectRatio"=> "320:213"
+//       ],
+//       "body"=> [
+//         "type"=> "box",
+//         "layout"=> "vertical",
+//         "contents"=> [
+//           [
+//             "type"=> "text",
+//             "text"=> "ThinkPad X13",
+//             "weight"=> "bold",
+//             "size"=> "sm"
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "baseline",
+//             "contents"=> [
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+//               ],
+//               [
+//                 "type"=> "icon",
+//                 "size"=> "xs",
+//                 "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+//               ],
+//               [
+//                 "type"=> "text",
+//                 "text"=> "4.0",
+//                 "size"=> "sm",
+//                 "color"=> "#8c8c8c",
+//                 "margin"=> "md",
+//                 "flex"=> 0
+//               ]
+//             ]
+//           ],
+//           [
+//             "type"=> "box",
+//             "layout"=> "vertical",
+//             "contents"=> [
+//               [
+//                 "type"=> "box",
+//                 "layout"=> "baseline",
+//                 "spacing"=> "sm",
+//                 "contents"=> [
+//                   [
+//                     "type"=> "text",
+//                     "text"=> "฿36,777",
+//                     "wrap"=> true,
+//                     "color"=> "#8c8c8c",
+//                     "size"=> "xs",
+//                     "flex"=> 5
+//                   ]
+//                 ]
+//               ]
+//             ]
+//           ]
+//         ],
+//         "spacing"=> "sm",
+//         "paddingAll"=> "13px"
+//       ]
+//   ]
+//   ];
 
 if ( sizeof($request_array['events']) > 0 ) {
     foreach ($request_array['events'] as $event) {
