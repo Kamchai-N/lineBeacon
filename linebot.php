@@ -118,7 +118,7 @@ $jsonFlex = [
                     "text" => "Place",
                     "color" => "#aaaaaa",
                     "size" => "sm",
-                    "flex" => 1
+                    "flex" => "1"
                   ],
                   [
                     "type" => "text",
@@ -126,7 +126,7 @@ $jsonFlex = [
                     "wrap" => true,
                     "color" => "#666666",
                     "size" => "sm",
-                    "flex" => 5
+                    "flex" => "5"
                   ]
                 ]
               ],
@@ -140,7 +140,7 @@ $jsonFlex = [
                     "text" => "Time",
                     "color" => "#aaaaaa",
                     "size" => "sm",
-                    "flex" => 1
+                    "flex" => "1"
                   ],
                   [
                     "type" => "text",
@@ -148,7 +148,7 @@ $jsonFlex = [
                     "wrap" => true,
                     "color" => "#666666",
                     "size" => "sm",
-                    "flex" => 5
+                    "flex" => "5"
                   ]
                 ]
               ]
