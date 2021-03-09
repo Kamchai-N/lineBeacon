@@ -42,44 +42,14 @@ $jsonFlex = [
       "type" => "bubble",
       "direction" => "ltr",
       "header" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
-          ],
-          [
-            "type" => "text",
-            "text" => "฿ 100.00",
-            "size" => "3xl",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "Rabbit Line Pay",
-            "size" => "lg",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
-            "size" => "xs",
-            "color" => "#B2B2B2"
-          ],
-          [
-            "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
-            "size" => "lg",
-            "color" => "#000000"
-          ]
+        "type" => "image",
+        "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+        "size"=> "full",
+        "aspectRatio"=> "20:13",
+        "aspectMode"=> "cover",
+        "action"=> [
+          "type"=> "uri",
+          "uri"=> "http://linecorp.com/"
         ]
       ],
       "body" => [
@@ -87,73 +57,140 @@ $jsonFlex = [
         "layout" => "vertical",
         "contents" => [
           [
-            "type" => "separator",
-            "color" => "#C3C3C3"
+            "type" => "text",
+            "text" => "Brown Cafe",
+            "weight" => "bold",
+            "size" => "xl"
           ],
           [
             "type" => "box",
             "layout" => "baseline",
-            "margin" => "lg",
+            "margin" => "md",
             "contents" => [
               [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
+                "type" => "icon",
+                "size" => "sm",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              ],
+              [
+                "type" => "icon",
+                "size" => "sm",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              ],
+              [
+                "type" => "icon",
+                "size" => "sm",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              ],
+              [
+                "type" => "icon",
+                "size" => "sm",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              ],
+              [
+                "type" => "icon",
+                "size" => "sm",
+                "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
               ],
               [
                 "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
+                "text" => "4.0",
+                "size" => "sm",
+                "color" => "#999999",
+                "margin" => "md",
+                "flex" => 0
               ]
             ]
           ],
           [
             "type" => "box",
-            "layout" => "baseline",
+            "layout" => "vertical",
             "margin" => "lg",
+            "spacing" => "sm",
             "contents" => [
               [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
+                "type" => "box",
+                "layout" => "baseline",
+                "spacing" => "sm",
+                "contents" => [
+                  [
+                    "type" => "text",
+                    "text" => "Place",
+                    "color" => "#aaaaaa",
+                    "size" => "sm",
+                    "flex" => 1
+                  ],
+                  [
+                    "type" => "text",
+                    "text" => "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+                    "wrap" => true,
+                    "color" => "#666666",
+                    "size" => "sm",
+                    "flex" => 5
+                  ]
+                ]
               ],
               [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
+                "type" => "box",
+                "layout" => "baseline",
+                "spacing" => "sm",
+                "contents" => [
+                  [
+                    "type" => "text",
+                    "text" => "Time",
+                    "color" => "#aaaaaa",
+                    "size" => "sm",
+                    "flex" => 1
+                  ],
+                  [
+                    "type" => "text",
+                    "text" => "10:00 - 23:00",
+                    "wrap" => true,
+                    "color" => "#666666",
+                    "size" => "sm",
+                    "flex" => 5
+                  ]
+                ]
               ]
             ]
-          ],
-          [
-            "type" => "separator",
-            "margin" => "lg",
-            "color" => "#C3C3C3"
           ]
         ]
       ],
-      "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
+      "footer"=> [
+        "type"=> "box",
+        "layout"=> "vertical",
+        "spacing"=> "sm",
+        "contents"=> [
           [
-            "type" => "text",
-            "text" => "View Details",
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
+            "type"=> "button",
+            "style"=> "link",
+            "height"=> "sm",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "CALL",
+              "uri"=> "https://linecorp.com"
             ]
+          ],
+          [
+            "type"=> "button",
+            "style"=> "link",
+            "height"=> "sm",
+            "action"=> [
+              "type"=> "uri",
+              "label"=> "WEBSITE",
+              "uri"=> "https://linecorp.com"
+            ]
+          ],
+          [
+            "type"=> "spacer",
+            "size"=> "sm"
           ]
-        ]
+        ],
+        "flex"=> 0
       ]
     ]
   ];
-  
+
 
 // $jsonFlex = [
 //   "type"=> "carousel",
